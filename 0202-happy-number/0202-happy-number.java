@@ -15,24 +15,7 @@ class Solution {
         return n == 1;
 
 
+
         
-        // HashSet<Integer> set = new HashSet<>();
-        // while(n != 1)
-        // {
-        //     if(set.contains(n))
-        //     {
-        //         return false;
-        //     }
-        //     set.add(n);
-        //     int sum = 0;
-        //     while(n > 0)
-        //     {
-        //         int last = n % 10;
-        //         sum += (last * last);
-        //         n /= 10;
-        //     }
-        //     n = sum;
-        // }
-        // return true;
     }
 }
