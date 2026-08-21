@@ -30,27 +30,24 @@
 class Solution {
 
     public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-
-        return count(nums, right) - count(nums, left - 1);
+        return count(nums,right) - count(nums,left-1);        
     }
-
-    public int count(int[] nums, int limit) {
-
-        int ans = 0;
+    public int count(int[] nums,int limit)
+    {
+        int ans=0;
         int len = 0;
-
-        for(int i = 0; i < nums.length; i++) {
-
-            if(nums[i] <= limit) {
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i] <= limit)
+            {
                 len++;
-            } 
-            else {
-                len = 0;
             }
-
+            else
+            {
+                len=0;
+            }
             ans += len;
         }
-
         return ans;
     }
 }
